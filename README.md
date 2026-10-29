@@ -3,8 +3,19 @@
 给 DeepSeek Harness 增加「操作本机 + 操作浏览器」的能力：截屏、录屏、真实鼠标键盘输入、应用控制、
 AppleScript 逃生舱，以及基于 DevTools 协议（CDP）的 Chromium 浏览器自动化，适合做 UI 自动化测试。
 
-> **平台**：桌面自动化部分仅支持 **macOS**（Swift helper + `screencapture` + `osascript`），需要授予
-> 辅助功能与屏幕录制权限；浏览器自动化部分跨平台。
+> **平台**：当前发布的是 **macOS 版**。桌面自动化基于 Swift helper + `screencapture` + `osascript`，
+> 需要授予辅助功能与屏幕录制权限；**Windows 版后续补充**；浏览器自动化部分跨平台，不受平台限制。
+
+## 平台支持
+
+| 平台 | 桌面自动化 | 浏览器自动化 |
+| --- | --- | --- |
+| **macOS** | ✅ 当前版本完整支持（本版本即为 macOS 版） | ✅ |
+| **Windows** | 🚧 后续补充 | ✅ |
+| Linux | —— | ✅ |
+
+> Windows 版桌面能力（窗口/输入/截图）尚未实现，路线图上排在下一阶段；在此之前 Windows 用户
+> 只能使用浏览器自动化部分。macOS 版的能力边界见文末「已知限制」。
 
 - 纯 ESM、零 npm 依赖（Node 22+ 内置 `WebSocket`）
 - Host 插件 bundle，安装后对所有会话可用，重启后仍然生效
