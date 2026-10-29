@@ -1,0 +1,60 @@
+{
+  "name": "@liuxinye/dsh-automation",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Desktop and browser automation for DeepSeek Harness: screenshots, screen recording, mouse/keyboard input, app control, AppleScript escape hatch, and Chromium automation over CDP.",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "index.js",
+    "lib/**/*.mjs",
+    "lib/native-helper.swift",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "author": "liuxinye",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auraflame-ywt/dsh-automation.git"
+  },
+  "homepage": "https://github.com/auraflame-ywt/dsh-automation#readme",
+  "bugs": {
+    "url": "https://github.com/auraflame-ywt/dsh-automation/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.3 <1.0.0"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "automation",
+    "browser",
+    "cdp",
+    "screenshot",
+    "macos",
+    "agent"
+  ],
+  "scripts": {
+    "test": "node --check index.js && for f in lib/*.mjs; do node --check \"$f\"; done"
+  }
+}

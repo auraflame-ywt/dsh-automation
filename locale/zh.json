@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "桌面与浏览器自动化",
+    "description": "让智能体操作本机与 Chromium 浏览器：截屏、录屏、真实鼠标键盘输入、应用控制、AppleScript，以及基于 DevTools 协议的浏览器自动化测试。"
+  }
+}

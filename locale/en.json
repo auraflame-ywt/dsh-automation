@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Desktop & Browser Automation",
+    "description": "Let the agent operate this Mac and a Chromium browser: screenshots, screen recording, real mouse and keyboard input, app control, AppleScript, and DevTools-protocol browser automation for tests."
+  }
+}

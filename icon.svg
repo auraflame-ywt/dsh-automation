@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Desktop and browser automation">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b5cff"/>
+      <stop offset="1" stop-color="#8b3dff"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#dbe6ff" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)"/>
+  <rect x="10" y="13" width="44" height="29" rx="4" fill="url(#screen)"/>
+  <rect x="10" y="13" width="44" height="7" rx="4" fill="#1b2a6b" opacity="0.85"/>
+  <circle cx="15" cy="16.5" r="1.6" fill="#ff6b6b"/>
+  <circle cx="20" cy="16.5" r="1.6" fill="#ffd166"/>
+  <circle cx="25" cy="16.5" r="1.6" fill="#5ce1a0"/>
+  <path d="M17 26h16M17 30h11M17 34h13" stroke="#3a4a8c" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+  <path d="M40 24l12 11-5.2 0.9 3.4 6.4-3.1 1.7-3.4-6.5-3.7 3.6z" fill="#101a3f" stroke="#101a3f" stroke-width="1.4" stroke-linejoin="round"/>
+  <rect x="26" y="44" width="12" height="3.4" rx="1.7" fill="#ffffff" opacity="0.9"/>
+  <rect x="20" y="48.4" width="24" height="3.4" rx="1.7" fill="#ffffff" opacity="0.65"/>
+</svg>

@@ -1,0 +1,17 @@
+name: test
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.x
+      - run: node --check index.js
+      - run: for f in lib/*.mjs; do node --check "$f"; done
+      # desktop end-to-end tests need macOS + TCC permissions and run locally,
+      # not in CI (see test/*.mjs and the README).

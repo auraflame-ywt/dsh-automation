@@ -1,0 +1,21 @@
+# Automation suite: desktop + browser control for the DeepSeek Harness.
+# The row config below is read by index.js `apply(ctx, config)`; every field is optional.
+- insert:
+    - id: automation-suite
+      name: '@liuxinye/dsh-automation'
+      config:
+        # Where screenshots, recordings and browser profiles are written.
+        # null -> <session working directory>/.dsh-automation
+        artifactDir: null
+        # Default Chromium family for the browser tool: chrome | edge.
+        browserKind: chrome
+        # Launch headless by default; a model call may override per launch.
+        browserHeadless: true
+        # Fixed CDP port (null -> pick a free one).
+        browserPort: null
+        # Reused profile dir for the browser (null -> <artifactDir>/browser-profile).
+        browserUserDataDir: null
+        # Directory for the compiled native helper; null -> $TMPDIR/dsh-automation-native
+        helperCacheDir: null
+        # Timeout for one shell/helper invocation.
+        commandTimeoutMs: 30000
