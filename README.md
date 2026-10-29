@@ -4,18 +4,19 @@
 AppleScript 逃生舱，以及基于 DevTools 协议（CDP）的 Chromium 浏览器自动化，适合做 UI 自动化测试。
 
 > **平台**：当前发布的是 **macOS 版**。桌面自动化基于 Swift helper + `screencapture` + `osascript`，
-> 需要授予辅助功能与屏幕录制权限；**Windows 版后续补充**；浏览器自动化部分跨平台，不受平台限制。
+> 需要授予辅助功能与屏幕录制权限；**Windows 版已发布，见
+> [`@liuxinye/dsh-computer-use`](https://github.com/auraflame-ywt/dsh-computer-use)**；浏览器自动化部分跨平台。
 
 ## 平台支持
 
 | 平台 | 桌面自动化 | 浏览器自动化 |
 | --- | --- | --- |
 | **macOS** | ✅ 当前版本完整支持（本版本即为 macOS 版） | ✅ |
-| **Windows** | 🚧 后续补充 | ✅ |
+| **Windows** | ✅ 另见 [`@liuxinye/dsh-computer-use`](https://github.com/auraflame-ywt/dsh-computer-use) | ✅ |
 | Linux | —— | ✅ |
 
-> Windows 版桌面能力（窗口/输入/截图）尚未实现，路线图上排在下一阶段；在此之前 Windows 用户
-> 只能使用浏览器自动化部分。macOS 版的能力边界见文末「已知限制」。
+> Windows 桌面能力（窗口/输入/截图/UIAutomation）由独立插件 `@liuxinye/dsh-computer-use` 提供，
+> 与本插件共享同一组工具名与设计；macOS 版的能力边界见文末「已知限制」。
 
 - 纯 ESM、零 npm 依赖（Node 22+ 内置 `WebSocket`）
 - Host 插件 bundle，安装后对所有会话可用，重启后仍然生效

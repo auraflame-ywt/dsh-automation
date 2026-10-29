@@ -1,8 +1,8 @@
 {
   "name": "@liuxinye/dsh-automation",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
-  "description": "Desktop and browser automation for DeepSeek Harness. Current release is the macOS build: screenshots, screen recording, mouse/keyboard input, app control and AppleScript, plus cross-platform Chromium automation over CDP. Windows desktop support is planned.",
+  "description": "Desktop and browser automation for DeepSeek Harness. This package is the macOS build: screenshots, screen recording, mouse/keyboard input, app control and AppleScript, plus cross-platform Chromium automation over CDP. Windows desktop support lives in @liuxinye/dsh-computer-use.",
   "exports": {
     ".": "./index.js",
     "./package.json": "./package.json",
